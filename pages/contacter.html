@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" media="only screen and (max-width: 500px)" href="../css/style.mobile.css" />
+    <link href="https://fonts.googleapis.com/css?family=Long+Cang|Montserrat:300,400,700&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/83f4286022.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="vp-container" id="headerContent">
+        <header id="header">
+            <h2 class="vp-logo">
+                <i class="fas fa-crown"></i>
+                <a href="#">Institut IME - Bafoussam</a>
+            </h2>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html" id="loginLink">Login</a></li>
+                <li><a href="../index.html" id="showSignup">SignUp</a></li>
+                <li><a href="#offer">Nos offres</a></li>
+                <li><a href="#team">Notre equipe</a></li>
+                <li><a href="./pages/contacter.html">Contact</a></li>
+            </ul>
+        </header>
+
+
+        <div class=" formsContainer ">
+            <!-- formulaire d'inscription  -->
+
+            <form id="signupForm" class="formClass hidden">
+                <div class="form-container">
+                    <div class="formTitle">
+                        <h1>Formulaire d'inscription </h1>
+                    </div>
+                    <label for="nom">Nom :</label> </br>
+                    <input type="text" name="nom" placeholder="Veillez saisir votre nom" /></br>
+
+                    <label for="prenom">Prenom :</label> </br>
+                    <input type="text" name="prenom" placeholder="votre prenom" /></br>
+
+                    <label for="email">Email :</label> </br>
+                    <input type="email" name="email" placeholder="votre email" /> </br>
+
+                    <label for="passwodr">password :</label> </br>
+                    <input type="password" name="password" placeholder="your password" /> </br>
+
+                    <div class="groupElem">
+                        <label for="sex">Sex :</label></br>
+                        <input type="radio" name="sex" />M
+                        <input type="radio" name="sex" />F </br>
+                    </div>
+
+                    <label for="age">Age :</label> </br>
+                    <input type="age" name="age" placeholder="your age" /> </br>
+
+                    <label for="telephone">Telephone :</label> </br>
+                    <input type="number" name="telephone" placeholder="your phone number" /> </br>
+
+                    <div class="groupElem">
+                        <label for="langue">Langue :</label>
+                        <div class=".centerInput()">
+                            <input type="checkbox" name="langue" /> Fran
+                            <input type="checkbox" name="langue" /> Ang
+                            <input type="checkbox" name="langue" /> Esp
+                            <input type="checkbox" name="langue" /> All</br>
+                        </div>
+
+                    </div></br>
+
+
+                    <label for="countries">Country :</label> </br>
+                    <select name="countries">
+
+                        <optgroup label="Africa">
+                            <option value="cameroun">Cameroun</option>
+                            <option value="nigeria">Nigeria</option>
+                            <option value="congo">Congo</option>
+                            <option value="gabon">Gabon</option>
+                            <option value="Tchad">Tchad</option>
+                            <option value="togo">Togo</option>
+                            <option value="Guinée">Guinée</option>
+                            <option value="Mali">Mali</option>
+                        </optgroup>
+
+                        <optgroup label="Europe">
+                            <option value="Canada">Canada</option>
+                            <option value="usa">USA</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Austria">Austria</option>
+                            <option value="polane">polane</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="Russia ">Russia</option>
+                            <option value="France">France</option>
+                        </optgroup>
+                    </select> </br>
+                    <div class="altenativeForm">
+                        <button type="reset" onclick="hideForm(signupForm)"><a href="">Close</a></button>
+                        <button type="submit" onclick="hideForm(signupForm)">Create</button>
+                    </div>
+                    <div class="sugessionForm">
+                        <a href="">Already have an account ?</a>
+                    </div>
+
+                </div>
+            </form>
+            <!-- formulaire de connexion -->
+
+            <form id="loginForm" class="formClass hidden">
+                <div class="form-container">
+                    <div class="formTitle">
+                        <h1>Formulaire de connexion </h1>
+                    </div>
+                    <label for="email">Email :</label> </br>
+                    <input type="email" name="email" placeholder="votre email" /> </br>
+
+                    <label for="passwodr">password :</label> </br>
+                    <input type="password" name="password" placeholder="your password" /> </br>
+
+                    <div class="altenativeForm">
+
+                        <button type="reset" onclick="hideForm(signupForm)"><a href="">Close</a></button>
+                        <button type="submit" onclick="hideForm(signupForm)">Create</button>
+                    </div>
+                    <div class="sugessionForm">
+                        <a href="">Don't have an account ?</a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+
+        Insertion du formulaire pour contacter l'ecole
+
+        <section id="contact" class="contact bg-dark">
+            <form action="#" class="contact-form">
+                <h2 class="title">Proposer un <strong>commentaire</strong></h2>
+                <input type="text" placeholder="Nom" name="name" id="name" />
+                <input type="email" placeholder="Email" name="email" id="email" />
+                <input type="text" placeholder="Votre message ..." name="message" id="message" />
+                <div>
+                    <button>Soumettre</button>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <p>© 2023 INSTITUT SUPERIEUR DE MANAGEMENT ET DE L’ENTREPRENEURIAT(IME) , Tous droits réservés.</p>
+            <p>Copyright © 2023 ime, Inc.</p>
+        </footer>
+        <script src="../script.js"></script>
+
+</body>
+
+</html>

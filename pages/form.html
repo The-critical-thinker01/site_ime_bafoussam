@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+       <div class="container">
+        <div class="title">
+            <h1>Formulaire d'inscription </h1>
+        </div>
+
+           
+        <label for="nom" >Nom :</label> </br>
+        <input type="text"  name="nom" placeholder="Veillez saisir votre nom" /></br>
+
+        <label for="prenom">Prenom :</label> </br>
+        <input type="text" name="prenom" placeholder="votre prenom" /></br>
+
+        <label for="email">Email :</label> </br>
+        <input type="email" name="email" placeholder="votre email"/> </br>
+
+        <label for="passwodr">password :</label> </br>
+        <input type="password" name="password" placeholder="your password"/> </br>
+        <div class="groupElem">
+            <label for="sex">Sex :</label></br>
+            <input type="radio" name="sex" />M
+            <input type="radio" name="sex" />F </br>
+        </div>
+        
+
+        <label for="age">Age :</label> </br>
+        <input type="age" name="age" placeholder="your age" /> </br>
+<!-- 
+        <label for="telephone">Telephone :</label> </br>
+        <input type="number" name="telephone" placeholder="your phone number"/> </br> -->
+
+        <div class="groupElem">
+            <label for="langue">Langue :</label>
+        <input  type="checkbox" name="langue"/>Fran 
+        <input  type="checkbox" name="langue" />Ang 
+        <input  type="checkbox" name="langue" />Esp 
+        <input  type="checkbox" name="langue" />All</br>
+        </div>
+        
+
+        <label  for="countries">Country :</label> </br>
+        <select name="countries">
+
+            <optgroup label="Africa"  >
+                <option value="cameroun">Cameroun</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="congo">Congo</option>
+                <option value="gabon">Gabon</option>  
+                <option value="Tchad">Tchad</option>
+                <option value="togo">Togo</option>
+                <option value="Guinée">Guinée</option>
+                <option value="Mali">Mali</option>
+            </optgroup>
+
+            <optgroup label="Europe"  >
+                <option value="Canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="Germany">Germany</option>
+                <option value="Austria">Austria</option>  
+                <option value="polane">polane</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Russia ">Russia</option>
+                <option value="France">France</option>
+            </optgroup>
+        </select> </br>
+        <button type="submit">Submit</button>
+        
+       </div>
+    </form>
+</body>
+</html>
