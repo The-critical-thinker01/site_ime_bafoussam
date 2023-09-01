@@ -86,9 +86,7 @@
     justify-content: space-between;
     line-height: 1.8rem;
     margin-bottom: 5px;
-    box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999,
-    4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999;
-    
+   
     }
   
   .vp-logo {
@@ -415,7 +413,7 @@
   
   .who-content-img {
     flex: 1;
-    background: url(https://dyma-images.s3.fr-par.scw.cloud/html-css/projects/project2/team.jpg)
+    background: url(../captures/WhatsApp\ Image\ 2023-08-31\ at\ 16.52.24.jpg)
       center center/cover;
   }
   

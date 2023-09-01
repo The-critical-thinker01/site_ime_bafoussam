@@ -47,7 +47,7 @@ nextButton.addEventListener("click", nextSlide);
 prevButton.addEventListener("click", prevSlide);
 
 function startAutoSlide() {
-  intervalId = setInterval(nextSlide, 4000); // Change slide every 3 seconds
+  intervalId = setInterval(nextSlide, 2000); // Change slide every 3 seconds
 }
 
 function stopAutoSlide() {
